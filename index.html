@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LC01: JS-ify a basic webpage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <h1>JS-ify !
+        <!-- These spans in my <h1> tag allow me to know exactly which size I'm currently using. -->
+        <span class="weak">
+            (Size: 
+            <span class="d-inline d-sm-none">XS</span>
+            <span class="d-none d-sm-inline d-md-none">SM</span>
+            <span class="d-none d-md-inline d-lg-none">MD</span>
+            <span class="d-none d-lg-inline d-xl-none">LG</span>
+            <span class="d-none d-xl-inline">XL</span>
+            )
+        </span>
+    </h1>
+    <!-- This is where we'll be experimenting -->
+    <div id="heroes-gallery">
+
+        <!-- 
+            This block is our base. We'll want to duplicate it dynamically for each object in our "database" 
+            Data needed :
+            - Path to an image
+            - Alt for said image
+            - Title
+            - Tag (sort-of-an-ID-but-not-quite)
+            - Website URL
+            - Short text 
+            - Long text
+            - number of "claps" already given
+        -->
+
+        <!-- 
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 card">
+            <img class="card-img-top" src="default.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">[Title]</h5>
+                <p class="card-text">[shortText]</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    More about it
+                </button>
+            </div>
+        </div>
+         -->
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
